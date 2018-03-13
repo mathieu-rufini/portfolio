@@ -1,0 +1,465 @@
+@import url(reset/reset.css);
+@import url(font/fontAwesome/css/font-awesome.css);
+
+a,p,span,li, textarea, input, th{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h1>span,h2,h2>span,h3,h4,h5,h6{
+	font-family: 'Bungee', cursive;
+}
+
+
+h1, h1>span{
+	font-size: 60px;
+}
+
+h2, h2>span{
+	font-size: 40px;
+}
+
+h1>span, h2>span{
+	color:rgba(255,0,0,0.8);
+}
+body, html{
+	height: 100%;
+}
+
+.effetMenu{
+	font-size: 1em;
+	border-bottom: 2px solid white;
+}
+
+/*	BOUTON REMONTER */
+
+.bouton_remonter{
+	position: fixed;
+	bottom: 3vh;
+	right: 3vh;
+	font-size: 30px;
+	color: red;
+	z-index: 2;
+	color: white;
+	text-shadow: 0px 0px 20px black;
+}
+
+.bouton_remonter:hover{
+	opacity: 0.6;
+
+}
+/*	FIN BOUTON REMONTER */
+
+
+.langue{
+	text-decoration: none;
+	position: fixed;
+	width: 100%;
+	height: 1.5em;
+	font-size: 1em;
+	background-color: #474747;
+	color: white;
+	background: linear-gradient(to bottom, #474747, rgba(0,0,255,0));
+}
+.langue a{
+	text-decoration: none;
+}
+
+.mail_rapide{
+	position: fixed;
+	left: 0.5em;
+}
+.langue form *{
+	float: right;
+}
+.langue a, .langue span{
+	color: white;
+}
+
+
+
+/*	FIN BOUTONS DE LANGUE */
+
+/*			HEADER */
+
+.bloquerMenu{
+	display: block;
+	position: fixed;
+	top: 0;
+	z-index: 0;
+}
+
+button{
+	border: none;
+	background: none;
+	color: white;
+	cursor: pointer;
+}
+.langue button{
+	cursor: pointer;
+}
+
+header > nav{
+	display:none;
+	height: auto;
+	width: 100vw;
+	background-color: #474747;
+	background: linear-gradient(to bottom, #474747, rgba(0,0,0,0.2));
+	line-height: 100px;
+	box-shadow: 0 3px 20px black; ;
+	position: absolute;
+	text-align:center;
+	min-width: 320px;
+}
+
+header nav> ul{
+	text-align:center;
+}
+
+header nav >ul >li{
+	display: inline-block;
+}
+
+header nav > ul > li > a{
+	text-decoration: none;
+	color: white;
+	margin: 0 5px;
+
+}
+
+header li a:hover{
+	font-weight: bold;
+}
+
+/*			FIN HEADER */
+
+/* 			SECTION */
+
+section > div{
+	margin: 0 auto;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+	display: table-cell;
+	vertical-align: middle;
+	table-layout: fixed;
+}
+#accueil{
+	background: url(image/background.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+#presentation, #skill, #loisir, .backoffice{
+	background: url(image/background_fond2.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#presentation h3, #skill h3, #loisir h3{
+	padding-bottom: 5vh;
+	color: white;
+	font-weight: bold;
+}
+
+
+#presentation div div{
+	background-color: rgba(71,71,71,0.3);
+}
+
+#presentation p, #skill p, #loisir p, #loisir span{
+	color: white;
+	text-align: center;
+}
+
+#exp, #portfolio, #contact, .login{
+	background: url(image/background_fond.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+#exp h3, #portfolio h3, #contact h3{
+	padding-bottom: 5vh;
+	color: rgba(71,71,71,1);
+	font-weight: bold;
+}
+
+#exp div p:first-child{
+	padding: 2vh 0;
+	color: rgba(71,71,71,1);
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+ #exp p, #portfolio p{
+	color: rgba(71,71,71,1);
+	text-align: center;
+}
+
+#presentation div div, #exp div div{
+	display: table-cell;
+	width: 50vw;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+#presentation div img{
+	margin: 0 auto;
+	height: 280px;
+	width: 200px;
+	border: 1px solid black;
+	margin-top: 1.5vh;
+}
+
+#presentation div div :last-child{
+	padding-bottom: 1.5vh;
+}
+
+
+#exp div div{
+	background-color: rgba(71,71,71,0.2);
+}
+
+#presentation span{
+	font-weight: bold;
+	color: white;
+}	
+
+
+#skill>div>div>div{
+	margin: 0 auto;
+	height: 20px;
+	width: 320px;
+	background-color: rgba(71,71,71,0.2)
+}
+.progress_bar{
+
+	left: 0;
+	height: 100%;
+	background-color: rgba(77,210,10,1);
+	line-height: 20px;
+}
+#portfolio >div >*:nth-child(2){
+	margin: 0 auto;
+	width: 80vw;
+	height: 40vh;
+	border: 1px solid black;
+	background-color: rgba(71,71,71,0.3);
+}
+
+#portfolio i{
+	padding-top: 3vh;
+	font-size: 2em;
+}
+
+
+
+#loisir div p{
+	font-size: 1.8em;	
+}
+
+#loisir span{
+	font-size: 0.8em;
+}
+
+
+@media screen and (max-width: 600px){
+	#presentation div div, #exp div div{
+		display: block;
+		width: 50vw;
+	}
+	.div_droite{
+		border-top: 2vh double rgba(71,71,71,1);
+		border-left: none;
+	}
+}
+
+@media screen and (max-width: 580px){
+	header>nav>ul{
+		font-size: 0.75em;
+	}
+
+}
+
+@media screen and (max-width: 450px){
+	header>nav>ul{
+		font-size: 0.65em;
+	}
+}
+@media screen and (max-width: 400px){
+	#presentation div img{
+		width:95%;
+		height: 80%;
+	}
+}
+@media screen and (max-width: 320px){
+	#skill>div>div>div{
+		width: 100vw;
+	}
+}
+/*			SECTION CONTACT */
+.contact, .message{
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #474747;
+	box-sizing: border-box;
+	background-color: rgba(71,71,71,0.2);
+	outline: 0;
+	padding: 30px 0;
+	font-size: 1em;
+	width: 50vw;
+	height: 2em;
+	margin-top: 1px;
+
+}
+
+.message{
+	height: 10em;
+}
+
+.contact-submit{
+	box-sizing: border-box;
+	width: 30vh;
+	margin-top: 20px;
+	padding: 15px;
+	border-radius: 5px;
+	color: rgba(255,255,255,1);
+	background-color:  rgba(71,71,71,0.8);
+	border: 1px solid rgba(71,71,71,1);
+}
+
+
+input::placeholder, textarea::placeholder{
+	color: rgba(71, 71, 71, 0.6);
+}
+
+input:focus::placeholder, textarea:focus::placeholder{
+	color: rgba(71, 71, 71, 1);
+	font-weight: bold;
+
+}
+
+
+/*			PARTIE SPECIFIQUE A LOGADMIN*/
+
+.login{
+	width: 100%;
+	height: 100vh;
+}
+
+.login div{
+	width: 100vw;
+	height: 30vh;
+}
+.login form input{
+	display: block;
+	margin: 0 auto;
+	width: 30vh;
+	height: 30px;
+}
+.login form input:last-child{
+	margin-top: 2vh;
+	width: 10vh;
+}
+.login h1, .login p{
+	text-align: center;
+}
+.login h1{
+	font-size: 2.8em;
+}
+.login p{
+	margin-top: 30px;
+	color: red;
+}
+
+.header_admin div{
+	display: fixed;
+	top: 0;
+	height: auto;
+	width: 100%;
+	background-color: #474747;
+	background: linear-gradient(to bottom, #474747, rgba(0,0,0,0.2));
+	line-height: 100px;
+	box-shadow: 0 3px 20px black; ;
+	position: absolute;
+	text-align:center;
+	min-width: 320px;
+}
+
+.header_admin div *{
+	color: white;
+	display: block;
+	float: right;
+	padding-right: 2vh;
+}
+
+.backoffice{
+	padding-top: 15vh;
+}
+
+.backoffice h1{
+	font-size: 3em;
+}
+.backoffice table{
+	margin: 0 auto;
+	background-color: rgba(71,71,71,0.2);
+	color: black;
+	width: 95vw;
+}
+.backoffice thead{
+	background-color: rgba(71,71,71,0.8);
+	color: white;
+}
+
+table thead th, table tbody *{
+	vertical-align: middle;
+	
+}
+	
+.backoffice th{
+	height: 50px;
+	border: 1px solid rgba(71,71,71,0.8);
+}
+
+
+.backoffice th input{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgba(71,71,71,0.2);
+	border: none;
+}
+/*			FIN PARTIE SPECIFIQUE A LOGADMIN*/
+
+
+
+.ajout{
+	display: table-cell;
+	
+	
+}
+
+
+
+/*			FIN SECTION CONTACT */
+
+footer{
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	background-color: #474747;
+	box-shadow: 0px 3px 30px black;
+	z-index: 1;
+
+}
+

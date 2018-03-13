@@ -1,0 +1,34 @@
+body{
+	margin: 0 auto;
+	width: 100%;
+
+}
+
+header{
+	background-color: lightblue;
+}
+
+h1, h3{
+	text-align: center;
+	text-decoration: underline;
+}
+
+
+.infoIMAPP{
+	display: table-cell;
+}
+
+.infoIMAPP > *{
+	text-align: center;
+}
+
+section{
+	background-color: lightblue;
+	padding: 10vh;
+}
+
+
+
+.options, .options2{
+	display: table-cell;
+}
